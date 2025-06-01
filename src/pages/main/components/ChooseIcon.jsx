@@ -51,7 +51,11 @@ function ChooseIcon({ configed, setConfiged }) {
     }
     return (
         <>
-            <div className="overlay"></div>
+            <div className="overlay"
+                style={{
+                    zIndex: "10"
+                }}
+            ></div>
             <div className="choose-icon">
 
                 <Stack direction={'column'}
