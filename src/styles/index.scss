@@ -1,0 +1,35 @@
+@import './config.scss';
+@import url("//cdn.web-fonts.ge/fonts/archyedt-bold/css/archyedt-bold.min.css");
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "ArchyEDT-Bold", sans-serif;
+}
+
+.primary-button {
+  border: 0;
+  padding: 0;
+  z-index: 1000;
+  width: fit-content;
+  padding: 0 20px;
+  height: 40px;
+  transition: 0.3s;
+  cursor: pointer;
+  border-radius: 40px;
+}
+.bg-danger {
+  background-color: $color-red; 
+}
+.confrim {
+  background-color: $color-dark;
+  font-family: "BPG WEB 001 Caps", sans-serif;
+  color: white;
+}
+
+
+.st-green {
+  margin-top: 10px;
+  font-family: "BPG WEB 001 Caps", sans-serif;
+  background-color: $color-dark-light;
+  color: white;
+}

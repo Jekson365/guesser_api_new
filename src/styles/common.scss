@@ -1,0 +1,36 @@
+@import './config.scss';
+
+.submit-button {
+    padding: 10px 30px;
+    cursor: pointer;
+    font-size: 17px;
+    border: 0;
+    outline: 0;
+    color: $color-white;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,0.3);
+    border-radius: 25px;
+    transition: 0.3s;
+    border: 5px solid $color-white;
+    &:hover {
+        transform: scale(1.05);
+        background-color: $color-dark;
+        
+    }
+}
+
+.bg-primary {
+    background-color: $color-dark-light;
+}
+.bg-danger {
+  background-color: $color-red; 
+}
+
+.stat {
+    padding: 10px 30px;
+    border: 0;
+    outline: 0;
+    font-size: 17px;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,0.3);
+    border-radius: 25px;
+    border: 5px solid $color-dark;
+}
