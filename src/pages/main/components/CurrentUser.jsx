@@ -3,6 +3,7 @@ import '../../../styles/main/choose-icon.scss'
 import React, { useContext, useEffect, useState } from 'react'
 import UseCurrentUser from '../../../hooks/users/UseCurrentUser'
 import { CurrentUserContext } from '../../../App'
+import SubmitButton from '../../../commons/SubmitButton'
 
 const icons = [
     {
@@ -52,6 +53,8 @@ function CurrentUser() {
                         <div className="name"
                         > {currentUser?.name}</div>
                         <div className="record score">რეკორდი - {currentUser?.highScore}</div>
+                        <SubmitButton handler={() => window.location.href = '/welcome'} FSize={17} type={'bg-danger'} text={'ლიდერბორდი'} />
+
                     </Stack>
                 </Stack>
             </div>

@@ -7,6 +7,7 @@ import Admin from './pages/main/admin/Admin'
 import Opening from './pages/opening/Opening'
 import { createContext, useEffect, useState } from 'react'
 import useCurrentUser from './hooks/users/UseCurrentUser'
+import LeaderBoard from './pages/leaderboard/LeaderBoard'
 
 
 export const CurrentUserContext = createContext();
@@ -30,6 +31,7 @@ function App() {
             <Route path='/welcome' element={<Opening />} />
             <Route path='/upload' element={<Upload />} />
             <Route path='/manager' element={<Admin />} />
+            <Route path='/leaderboard' element={<LeaderBoard />} />
           </Routes>
         </BrowserRouter>
       </CurrentUserContext.Provider>

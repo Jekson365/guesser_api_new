@@ -57,7 +57,7 @@ function FinalScore({ score, playAgain, showResult }) {
                         <h3>{score < 4000 ? gifs[0].texts[0] : score > 4000 && score < 4500 ? gifs[1].texts[0] : score > 4500 ? gifs[2].texts[0] : gifs[2].texts[0]}</h3>
                         <img src={score < 4000 ? gifs[0].gs[0] : score > 4000 && score < 4500 ? gifs[1].gs[0] : score > 4500 ? gifs[2].gs[0] : gifs[2].gs[0]} />
                     </div>
-                    <CountUp duration={2} end={score} className='score' />
+                    <CountUp duration={4} end={score} className='score' />
                     <Stack direction={'row'} gap={'20px'}>
                         <SubmitButton type={'bg-primary'} text={'ხელახლა'} handler={playAgain} />
                         <SubmitButton type={'bg-danger'} text={'შედეგი'} handler={showResult} />
